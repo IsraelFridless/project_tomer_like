@@ -2,6 +2,6 @@ from dataclasses import dataclass
 
 @dataclass
 class Answer:
-   question_id: int
    incorrect_answer: str
+   question_id: int = None
    id: int = None

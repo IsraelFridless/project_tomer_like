@@ -16,12 +16,12 @@ def delete_answer(answer_id: int):
         cursor.execute('DELETE FROM answers WHERE id = %s', (answer_id,))
         connection.commit()
 
-def create_answer(answer: Answer) -> int:
+def create_answer(answer: Answer, question_id: int) -> int:
     with get_db_connection() as connection, connection.cursor() as cursor:
         cursor.execute("""
-            INSERT INTO questions (incorrect_answer)
-            VALUES (%s) RETURNING id
-        """, (answer.incorrect_answer,))
+            INSERT INTO answers (incorrect_answer, question_id)
+            VALUES (%s, %s) RETURNING id
+        """, (answer.incorrect_answer, question_id))
         new_id = cursor.fetchone()['id']
         connection.commit()
         return new_id

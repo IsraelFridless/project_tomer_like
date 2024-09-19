@@ -6,10 +6,8 @@ from repository.database import get_db_connection
 def get_by_id(answer_id: int) -> List[Answer]:
     with get_db_connection() as connection, connection.cursor() as cursor:
         cursor.execute('SELECT * FROM answers WHERE question_id = %s', (answer_id,))
-        res = cursor.fetchall()
-        answers = [Answer(**row) for row in res]
-        connection.commit()
-        return answers
+        answers = cursor.fetchall()
+        return [Answer(**answer) for answer in answers]
 
 def delete_answer(answer_id: int):
     with get_db_connection() as connection, connection.cursor() as cursor:

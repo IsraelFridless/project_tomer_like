@@ -6,10 +6,8 @@ from repository.database import get_db_connection
 def get_all_questions() -> List[Question]:
     with get_db_connection() as connection, connection.cursor() as cursor:
         cursor.execute('SELECT * FROM questions')
-        res = cursor.fetchall()
-        questions = [Question(**q) for q in res]
-        connection.commit()
-        return questions
+        questions = cursor.fetchall()
+        return [Question(**q) for q in questions]
 
 def get_by_id(question_id: int) -> Question:
     with get_db_connection() as connection, connection.cursor() as cursor:

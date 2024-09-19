@@ -1,0 +1,162 @@
+[
+  {
+    "user_id": 3,
+    "question_id": 10,
+    "answer_text": "Sazae-san",
+    "is_correct": true,
+    "time_taken": "0:02:13",
+    "id": 1
+  },
+  {
+    "user_id": 1,
+    "question_id": 8,
+    "answer_text": "Super Mario 64",
+    "is_correct": true,
+    "time_taken": "0:01:29",
+    "id": 2
+  },
+  {
+    "user_id": 4,
+    "question_id": 8,
+    "answer_text": "Super Mario 64",
+    "is_correct": true,
+    "time_taken": "0:07:40",
+    "id": 3
+  },
+  {
+    "user_id": 9,
+    "question_id": 4,
+    "answer_text": "Incorrect B",
+    "is_correct": false,
+    "time_taken": "0:09:02",
+    "id": 4
+  },
+  {
+    "user_id": 2,
+    "question_id": 8,
+    "answer_text": "Super Mario 64",
+    "is_correct": true,
+    "time_taken": "0:02:37",
+    "id": 5
+  },
+  {
+    "user_id": 1,
+    "question_id": 9,
+    "answer_text": "Incorrect B",
+    "is_correct": false,
+    "time_taken": "0:01:49",
+    "id": 6
+  },
+  {
+    "user_id": 7,
+    "question_id": 10,
+    "answer_text": "Incorrect D",
+    "is_correct": false,
+    "time_taken": "0:00:13",
+    "id": 7
+  },
+  {
+    "user_id": 8,
+    "question_id": 6,
+    "answer_text": "Acinonyx jubatus",
+    "is_correct": true,
+    "time_taken": "0:01:27",
+    "id": 8
+  },
+  {
+    "user_id": 2,
+    "question_id": 7,
+    "answer_text": "Incorrect D",
+    "is_correct": false,
+    "time_taken": "0:02:29",
+    "id": 9
+  },
+  {
+    "user_id": 7,
+    "question_id": 5,
+    "answer_text": "Incorrect C",
+    "is_correct": false,
+    "time_taken": "0:06:45",
+    "id": 10
+  },
+  {
+    "user_id": 1,
+    "question_id": 9,
+    "answer_text": "Incorrect B",
+    "is_correct": false,
+    "time_taken": "0:06:43",
+    "id": 11
+  },
+  {
+    "user_id": 9,
+    "question_id": 2,
+    "answer_text": "AMCAR-4",
+    "is_correct": true,
+    "time_taken": "0:02:00",
+    "id": 12
+  },
+  {
+    "user_id": 2,
+    "question_id": 6,
+    "answer_text": "Incorrect C",
+    "is_correct": false,
+    "time_taken": "0:09:54",
+    "id": 13
+  },
+  {
+    "user_id": 3,
+    "question_id": 9,
+    "answer_text": "<marquee></marquee>",
+    "is_correct": true,
+    "time_taken": "0:01:45",
+    "id": 14
+  },
+  {
+    "user_id": 4,
+    "question_id": 7,
+    "answer_text": "Costa Rica",
+    "is_correct": true,
+    "time_taken": "0:08:22",
+    "id": 15
+  },
+  {
+    "user_id": 5,
+    "question_id": 7,
+    "answer_text": "Costa Rica",
+    "is_correct": true,
+    "time_taken": "0:09:23",
+    "id": 16
+  },
+  {
+    "user_id": 9,
+    "question_id": 5,
+    "answer_text": "False",
+    "is_correct": true,
+    "time_taken": "0:08:54",
+    "id": 17
+  },
+  {
+    "user_id": 7,
+    "question_id": 2,
+    "answer_text": "Incorrect D",
+    "is_correct": false,
+    "time_taken": "0:04:55",
+    "id": 18
+  },
+  {
+    "user_id": 1,
+    "question_id": 7,
+    "answer_text": "Incorrect D",
+    "is_correct": false,
+    "time_taken": "0:03:23",
+    "id": 19
+  },
+  {
+    "user_id": 1,
+    "question_id": 8,
+    "answer_text": "Incorrect B",
+    "is_correct": false,
+    "time_taken": "0:08:16",
+    "id": 20
+  }
+]

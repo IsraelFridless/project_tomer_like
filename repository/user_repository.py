@@ -6,18 +6,14 @@ from repository.database import get_db_connection
 def get_all_users() -> List[User]:
     with get_db_connection() as connection, connection.cursor() as cursor:
         cursor.execute('SELECT * FROM users')
-        res = cursor.fetchall()
-        users = [User(**u) for u in res]
-        connection.commit()
-        return users
+        users = cursor.fetchall()
+        return [User(**u) for u in users]
 
 def get_by_id(user_id: int) -> User:
     with get_db_connection() as connection, connection.cursor() as cursor:
         cursor.execute('SELECT * FROM users WHERE id = %s', (user_id,))
-        res = cursor.fetchone()
-        user = User(**res)
-        connection.commit()
-        return user
+        user = cursor.fetchone()
+        return User(**user)
 
 def delete_user(user_id: int):
     with get_db_connection() as connection, connection.cursor() as cursor:

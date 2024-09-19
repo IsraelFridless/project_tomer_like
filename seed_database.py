@@ -1,26 +1,23 @@
 from typing import List, Dict
 
-import requests
-from toolz import pipe
 from toolz.curried import partial
 import repository.database as db
 import repository.question_repository as q_repo, repository.answer_repository as ans_repo
 
-import requests
-from toolz import pipe
-from functools import partial
 
 from model.Answer import Answer
 from model.Question import Question
 
-import requests
 from toolz import pipe
-from functools import partial
-from typing import List, Dict
 
 import requests
 import time
 from typing import List, Dict
+
+from model.UserAnswer import UserAnswer
+from repository.user_answer_repository import create_user_answer
+from utils.load_json import load_json
+
 
 # Thank you Gpt
 def fetch_trivia_questions():
@@ -88,4 +85,8 @@ def fetch_users():
         list
     )
 
+def load_user_answers_from_json():
+    answers_json = load_json('../assets/user_answers.json')
+    for answer in [UserAnswer(**answer) for answer in answers_json]:
+        create_user_answer(answer)
 
